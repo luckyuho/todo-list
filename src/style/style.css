@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.todolist i {
+  pointer-events: none;
+}
+
+.todolist main {
+  min-height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right top, from(#5482ff), to(#64ff86));
+  background: linear-gradient(90deg, #5482ff, #64ff86);
+}
+
+.todolist header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todolist header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.todolist form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.todolist form input,
+.todolist form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.1rem;
+}
+
+.todolist form input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+.todolist form input::-webkit-outer-spin-button,
+.todolist form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.todolist form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.todolist form button {
+  cursor: pointer;
+  background-color: #009272;
+  color: white;
+}
+
+.todolist section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todolist section div.todo {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.2rem 0rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.todolist section div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+.todolist section div.todo p.todo-text {
+  width: 50%;
+}
+
+.todolist section div.todo p.todo-time {
+  width: 30%;
+  text-align: center;
+}
+
+.todolist section div.todo button {
+  padding: 0.28rem 0.7rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.todolist section div.todo button.complete {
+  background-color: #03ae03;
+}
+
+.todolist section div.todo button.trash {
+  background-color: #e30000;
+}
+
+.todolist div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+.todolist div.sort button {
+  cursor: pointer;
+  background-color: #4a0dac;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+.todolist .done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
